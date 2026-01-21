@@ -10,22 +10,22 @@
 
 ---
 
-## 🚀 Overview
+## Overview
 
 **MixCap** is a deep learning research project designed to generate accurate natural language descriptions for videos. While traditional models often rely solely on visual data, I designed MixCap to process **both sight and sound** to understand context (e.g., hearing a car engine helps identify a car even if the video is blurry).
 
 To address the challenge of training on limited datasets (like MSR-VTT), this project introduces a **Dual-Target MixUp Strategy** applied at the *feature level*, significantly improving generalization without breaking the temporal sequence of the video.
 
-### 🔗 Live Demo & Application
+### Live Demo & Application
 
 This repository contains the **research code, model architecture, and training pipeline**.
 To see the deployed model in a user-friendly Web Application (React + Flask), check out the **MixCap Web Platform**:
 
-👉 **[View the Web App Repository Here](https://github.com/RavinduLayanga/mixcap-web-platform)**
+**[View the Web App Repository Here](https://github.com/RavinduLayanga/mixcap-web-platform)**
 
 ---
 
-## 🧠 Key Innovation: Dual-Target MixUp
+## Key Innovation: Dual-Target MixUp
 
 Standard data augmentation (like flipping images) doesn't work well for video sequences or fused audio-visual data.
 
@@ -38,7 +38,7 @@ I implemented a custom **Dual-Target MixUp** strategy that operates on the **fus
 
 ---
 
-## 📊 Evaluation Results
+## Evaluation Results
 
 The model was evaluated on two standard MSR-VTT splits: the **1k-A Split** (standard academic benchmark) and the **Full Test Set** (2,990 videos) to test robustness.
 
@@ -56,7 +56,7 @@ The model was evaluated on two standard MSR-VTT splits: the **1k-A Split** (stan
 
 ---
 
-## 🛠️ Architecture & Tech Stack
+## Architecture & Tech Stack
 
 The architecture follows an Encoder-Decoder design:
 
@@ -70,7 +70,7 @@ The architecture follows an Encoder-Decoder design:
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```bash
 ├── features_extraction/
@@ -89,7 +89,7 @@ The architecture follows an Encoder-Decoder design:
 
 ---
 
-## 💻 Usage & Reproduction
+## Usage & Reproduction
 
 ### 1. Prerequisites
 
@@ -118,7 +118,7 @@ Open `model/mixcap-final-best-model.ipynb`:
 
 ---
 
-## 📚 Acknowledgements & Citations
+## Acknowledgements & Citations
 
 This project builds upon the following datasets and pre-trained models.
 
@@ -146,18 +146,18 @@ State-of-the-art pre-trained models are utilized for feature extraction. These m
 
 Li, J., et al. (2023). *BLIP-2: Bootstrapping Language-Image Pre-training.*
 
-Hugging Face Model Card
+[Hugging Face Model Card](https://huggingface.co/Salesforce/blip2-opt-2.7b)
 
 **Audio Encoder:** Wav2Vec2 (Meta AI)
 
 Baevski, A., et al. (2020). *wav2vec 2.0: A Framework for Self-Supervised Learning.*
 
-Hugging Face Model Card
+[Hugging Face Model Card](https://huggingface.co/facebook/wav2vec2-base-960h)
 
 ---
 
-## 📜 Author
+## Author
 
-Ravindu Layanga
-BSc (Hons) Computer Science
-University of Westminster / Informatics Institute of Technology (IIT)
+* **Ravindu Layanga**  
+* *BSc (Hons) Computer Science*  
+* University of Westminster / Informatics Institute of Technology (IIT)
