@@ -73,17 +73,22 @@ The architecture follows an Encoder-Decoder design:
 ## Repository Structure
 
 ```bash
-├── features_extraction/
-│   ├── mixcap-video-feature-extract.ipynb  # BLIP-2 extraction script
-│   ├── mixcap-audio-feature-extract.ipynb  # Wav2Vec2 extraction script
 ├── model/
-│   ├── mixcap-final-best-model.ipynb       # Core model architecture & training loop
-│   ├── spm_tokanizer.ipynb                 # SentencePiece tokenizer training
-├── evaluation/
-│   ├── mixcap-final-test-1ka.ipynb         # Inference on Benchmark Split
-│   ├── mixcap-final-test-full.ipynb        # Inference on Full Test Set
-├── docs/
-│   ├── dissertation.pdf                    # Full research paper
+│   ├── spm_tokanizer.ipynb
+│   ├── mixcap-final-best-model.ipynb
+│   ├── mixcap-final-test-1ka.ipynb
+│   └── mixcap-final-test-full.ipynb
+│
+├── feature extraction/
+│   ├── mixcap-video-feature-extraction-trainset.ipynb
+│   ├── mixcap-audio-feature-extraction-trainset.ipynb
+│   ├── mixcap-video-feature-extraction-testset.ipynb
+│   └── mixcap-audio-feature-extraction-testset.ipynb
+│
+├── frame and audio extraction/
+│   ├── mixcap-frame-audio-extraction.ipynb
+│   └── mixcap-frame-and-audio-extraction-testset.ipynb
+│
 └── README.md
 ```
 
