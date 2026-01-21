@@ -128,7 +128,7 @@ This project builds upon the following datasets and pre-trained models.
 
 Xu, J., Mei, T., Yao, T., & Rui, Y. (2016). *MSR-VTT: A Large Video Description Dataset for Bridging Video and Language.*
 
-Data Source: https://www.kaggle.com/datasets/nyhuka/msrvtt
+[Data Source](https://www.kaggle.com/datasets/nyhuka/msrvtt)
 
 **1k-A Split (JSFusion Split):**
 
